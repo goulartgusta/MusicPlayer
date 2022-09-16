@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>MusicPlayer</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="barra-title">
+            <p id="home"><a href="index.html">Início</a></p>
+            <p id="biblioteca"><a href="musicplayer.html">Minha Biblioteca</a></p>
+            <p id="logo"><img src="assets/img/musicIcon.png" id="iconmusic" height="50px"></i>MusicPlayer</p>
+            <a href="https://github.com/goulartgusta" target="_blank" rel="noopener noreferrer">
+                <p id="perfil">Gustavo Souza<img src="assets/img/perfil.png">
+            </a></p>
+        </div>
+
+        <img id="track-imagem">
+
+        <div class="lyrics">
+            <a id="letras">
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAABYElEQVRIie3UvWoUURgG4MlGrcTYuGASEEnjNWgTERVBvIA0NiGlRUAS0UIbC3Gx9iYsFITIFhbByspVC6/AwEoiCDE/5LHYtzgsizizayH4wcDwfuc83zBzmKr6X3+jcAtv8SNXF9cmhT82uo5wf1z8ZrA93MVZzGIt2RGujjOgmwHrI3rr6b1pih/DTpC5Ef3Z9L6XeavGjE5VVTO5P/zNuqka5qCwMvRBP6I9tOZeet26+CL2s3kVvdz30MY8HhRrbtTBF9DPxifJ2sWQ4XpUBz+FT9n4Eq2id6dAt7GB63XwFl4F+IyZ5FN4aHDe4TmO/zFcDOgE6GMh2Um8SH6AtdpwoNtB9rGYbB7vk3/Dlab4JfwMtJLsIr4m+4ILTfFz2ArUSbaE3WQbON0ID/Yu0GucwNPipDzDdGM8AzaD9TKEwR9yeSy4GHAGH4qn7uPyRPChIZt5Xecniv+z9Qtb1jZOgB6TNgAAAABJRU5ErkJggg==" />
+                Letras
+            </a>
+        </div>
+
+        <div class="num-musica">
+
+            <p id="playlist">Playlist</p>
+            <p id=" nome-playlist">Meus Favoritos</p>
+            <div class="num">
+                <p id="atual">1</p>
+                <p>/</p>
+                <p id="total-musica">10</p>
+            </div>
+        </div>
+
+
+        <div class="barra-play">
+
+            <div class="duracao">
+                <input type="range" min="0" max="100" id="duracao-musica" onchange="muda_duracao()">
+            </div>
+
+            <button onclick="favoritar()" id="favorito">
+                <i class="fa fa-heart"></i>
+            </button>
+
+            <div class="musica-titulo">
+                <p id="musica-nome">Nome da musica</p>
+                <p id="artista">Nome do Artista</p>
+            </div>
+
+            <div class="botoes-play">
+                <button onclick="reiniciar_musica()" id="reiniciar"><i class="fa fa-refresh"></i></button>
+                <button onclick=" voltar_musica()" id="anterior"><i class="fa fa-step-backward"></i></button>
+                <button onclick="just_play()" id="play"><i class="fa fa-play"></i></button>
+                <button onclick="proxima_musica()" id="proxima"><i class="fa fa-step-forward"></i></button>
+                <button onclick="autoplay_trocar()" id="atualizar"><i class="fa fa-circle-o-notch"></i></button>
+            </div>
+
+            <div class="volume">
+                <i class="fa fa-volume-up" id="icon-vol" onclick="muta_musica()"></i>
+                <input type="range" min="0" max="100" value="90" onchange="muda_volume()" id="volume">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
