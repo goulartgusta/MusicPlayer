@@ -1,12 +1,14 @@
-MusicPlayer
+<h1>MusicPlayer</h1>
 
-MusicPlayer solicitado no Instituto PROA 
+<h2>MusicPlayer solicitado no Instituto PROA</h2>
 
 
-Tela início
+<p>Tela início</p>
 
 <img src="assets/img/print3.png"/>
 
-Tela MusicPlayer
+<br>
+
+<p>Tela MusicPlayer</p>
 
 <img src="assets/img/print1.png"/>
