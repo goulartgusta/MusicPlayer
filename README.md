@@ -1,4 +1,4 @@
-<h1>MusicPlayer</h1>
+<h1>🎶 MusicPlayer</h1>
 <h2>MusicPlayer solicitado no Instituto PROA 💙</h2>
 
 
